@@ -135,28 +135,34 @@ CLI / API Output
 ## ▶️ How to Run the Project
 
 ### 1️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-2️⃣ Train the model (one-time)
-bash
-Copy code
-python -m src.pipelines.training_pipeline
-3️⃣ Run prediction pipeline
-bash
-Copy code
-python -m src.pipelines.prediction_pipeline
-4️⃣ Run CLI AI Tool
-bash
-Copy code
-python -m src.app.cli
-5️⃣ Run API (optional but recommended)
-bash
-Copy code
-uvicorn src.app.main:app --reload
-Open in browser:
+```
 
-arduino
-Copy code
+### 2️⃣ Train the model (one-time)
+```bash
+python -m src.pipelines.training_pipeline
+```
+
+### 3️⃣ Run prediction pipeline
+```bash
+python -m src.pipelines.prediction_pipeline
+```
+
+### 4️⃣ Run CLI AI Tool
+```bash
+python -m src.app.cli
+```
+
+### 5️⃣ Run API (optional but recommended)
+```bash
+uvicorn src.app.main:app --reload
+```
+
+Open in browser:
+```
 http://127.0.0.1:8000/docs
+```
 🔌 Interfaces Provided
 ✅ Command Line Interface (CLI)
 Executable AI tool
@@ -255,3 +261,7 @@ The system is designed to be usable, explainable, and deployable, aligning fully
 
 👤 Author
 Aditya Kumar Arya
+
+📢 **Follow & Connect:** If you liked this project, give it a ⭐ on GitHub and connect with me on [LinkedIn](https://www.linkedin.com/in/aditya-kumar-arya-25b154260/)!
+
+🚀 **Happy Coding!** 🎯
