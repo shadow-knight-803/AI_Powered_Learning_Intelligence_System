@@ -93,17 +93,19 @@ Each learner receives:
 
 ## 🏗️ AI System Architecture
 
+```
 Data Ingestion
-↓
+     ↓
 Feature Engineering (Student-Level Aggregation)
-↓
+     ↓
 Preprocessing Pipeline
-↓
+     ↓
 Trained ML Model (Loaded)
-↓
+     ↓
 Risk Detection Logic
-↓
+     ↓
 CLI / API Output
+```
 
 ---
 
@@ -132,7 +134,64 @@ CLI / API Output
 
 ---
 
-## ▶️ How to Run the Project
+## 📁 Project Structure
+
+```
+AI_Powered_Learning_Intelligence_System/
+│
+├── artifacts/
+│   ├── model/
+│   │   └── completion_model.pkl
+│   └── reports/
+│       └── risk_predictions.csv
+│
+├── data/
+│   └── synthetic_learning_data.csv
+│
+├── logs/
+│
+├── notebooks/
+│   ├── EDA.ipynb
+│   ├── Model Training.ipynb
+│   └── Model Training2.ipynb
+│
+├── src/
+│   ├── __pycache__/
+│   ├── app/
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   ├── cli.py
+│   │   └── main.py
+│   │
+│   ├── components/
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   │
+│   ├── pipelines/
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   ├── prediction_pipeline.py
+│   │   └── training_pipeline.py
+│   │
+│   ├── __init__.py
+│   ├── exception.py
+│   ├── logger.py
+│   └── utils.py
+│
+├── venv/
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── setup.py
+```
+
+---
+
+## 🚀 Getting Started
 
 ### 1️⃣ Install dependencies
 ```bash
@@ -163,104 +222,93 @@ Open in browser:
 ```
 http://127.0.0.1:8000/docs
 ```
-🔌 Interfaces Provided
-✅ Command Line Interface (CLI)
-Executable AI tool
 
-Accepts CSV input
+---
 
-Generates downloadable reports
+## 🔌 Interfaces Provided
 
-✅ REST API (FastAPI)
-File upload support
+### ✅ Command Line Interface (CLI)
+- Executable AI tool
+- Accepts CSV input
+- Generates downloadable reports
 
-JSON responses
+### ✅ REST API (FastAPI)
+- File upload support
+- JSON responses
+- Swagger UI for testing
 
-Swagger UI for testing
+---
 
-🧪 Testing & Validation
-Input validation via FastAPI
+## 🧪 Testing & Validation
 
-Sanity checks on predictions
+- Input validation via FastAPI
+- Sanity checks on predictions
+- Explicit error handling using custom exceptions
+- Logging for traceability
 
-Explicit error handling using custom exceptions
+---
 
-Logging for traceability
+## 🔍 Reproducibility
 
-🔍 Reproducibility
-Fixed random states
+- Fixed random states
+- Version-pinned dependencies
+- Saved model artifacts
+- Deterministic preprocessing pipelines
 
-Version-pinned dependencies
+---
 
-Saved model artifacts
+## ⚖️ Ethical AI & Responsible Usage
 
-Deterministic preprocessing pipelines
+- Model predictions are probabilistic, not deterministic
+- Risk labels are intended to support early intervention, not penalization
+- No sensitive personal attributes are used
+- Outputs are explainable and auditable
 
-⚖️ Ethical AI & Responsible Usage
-Model predictions are probabilistic, not deterministic
+---
 
-Risk labels are intended to support early intervention, not penalization
+## 🤖 AI Usage Disclosure (Mandatory)
 
-No sensitive personal attributes are used
-
-Outputs are explainable and auditable
-
-🤖 AI Usage Disclosure (Mandatory)
 AI tools (including ChatGPT) were used responsibly for:
 
-Code structure guidance
-
-Documentation drafting
-
-Debugging assistance
+- Code structure guidance
+- Documentation drafting
+- Debugging assistance
 
 All:
 
-Model logic
-
-Feature engineering
-
-Pipeline design
-
-Thresholding logic
+- Model logic
+- Feature engineering
+- Pipeline design
+- Thresholding logic
 
 were understood, verified, and implemented independently by the author.
 
 No AI-generated code was used without validation.
 
-📁 Project Structure
-graphql
-Copy code
-src/
- ├── components/      # Core ML logic
- ├── pipelines/       # Training & prediction pipelines
- ├── app/             # CLI and API interfaces
- ├── exception.py
- ├── logger.py
- └── utils.py
+---
 
-data/
-artifacts/
-logs/
-✅ Compliance Statement
+## ✅ Compliance Statement
+
 This submission:
 
-❌ Does NOT include notebooks as deliverables
+- ❌ Does NOT include notebooks as deliverables
+- ✅ Provides an executable AI tool
+- ✅ Uses a trained ML model
+- ✅ Exposes AI via CLI and API
+- ✅ Meets all mandatory admin requirements
 
-✅ Provides an executable AI tool
+---
 
-✅ Uses a trained ML model
+## 🏁 Final Note
 
-✅ Exposes AI via CLI and API
-
-✅ Meets all mandatory admin requirements
-
-🏁 Final Note
 This project focuses on AI engineering, not experimentation.
 The system is designed to be usable, explainable, and deployable, aligning fully with the goals of the AI Kata assessment.
 
-👤 Author
-Aditya Kumar Arya
+---
+
+## 👤 Author
+
+**Aditya Kumar Arya**
 
 📢 **Follow & Connect:** If you liked this project, give it a ⭐ on GitHub and connect with me on [LinkedIn](https://www.linkedin.com/in/aditya-kumar-arya-25b154260/)!
 
