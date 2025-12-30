@@ -2,13 +2,20 @@
 **AI Kata – Data Science & Machine Learning Internship Assessment**
 
 ---
+## 🔗 Live Demo & API Documentation
+
+Explore and test the deployed FastAPI Swagger UI:
+
+👉 Live API Docs:
+https://learning-intelligence-ai-j2h8.onrender.com/docs
+
+---
 
 ## 📌 Project Overview
 
 The **Learning Intelligence AI Tool** is a production-style, executable AI system designed to analyze learner behavior data and provide **intelligent predictions and insights** for mentors and administrators on an internship or training platform.
 
 Unlike notebook-based experimentation, this project delivers a **fully functional AI tool** that integrates machine learning into software pipelines and exposes predictions via **CLI and REST API interfaces**.
-Check this out :- https://learning-intelligence-ai-j2h8.onrender.com/docs
 ---
 
 ## 🎯 Objectives (As per Assignment)
